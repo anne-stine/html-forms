@@ -16,6 +16,14 @@ form {
     margin: 30px 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+/* .col {
+    flex: 0 1 auto;
+} */
+
 .required-label, button {
     background: pink;
     padding: 0.5em 0.8em;
@@ -59,10 +67,6 @@ input[type=search] {
     padding-left: 40px;
     background-position-x: 10px;
     background-position-y: center;
-}
-
-input[type=number] {
-    width: 20%;
 }
 
 input:focus, textarea:focus, select:focus {
