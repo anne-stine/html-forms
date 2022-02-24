@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,16 +12,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="body-container">
         <form action="/action_page.php">
+            
             <fieldset>
                 <legend>Account details</legend>
 
                 <label for="fname" required autofocus>First name</label>
+                <span class="required-label">Required</span>
                 <input type="text" required name="fname" id="fname">
 
                 <label for="surname" required>Surname</label>
+                <span class="required-label">Required</span>
                 <input type="text" required name="surname" id="surname">
 
                 <label for="email">Email</label>
@@ -30,31 +35,34 @@
                 <input type="password" required name="password" id="password">
             </fieldset>
 
-        
+            <fieldset>
+                <legend>Another section</legend>
 
+                <label for="coffee">How many coffees do you drink per day?</label>
+                <input type="number" name="coffee" id="coffee">
+    
+                <label for="pin">PIN number</label>
+                <input type="text" name="pin" id="pin" maxlength="4" size="4">
+            </fieldset>
 
-            <label for="coffee">How many coffees do you drink per day?</label>
-            <input type="number" name="coffee" id="coffee">
-
-            <label for="pin">PIN number</label>
-            <input type="text" name="pin" id="pin" maxlength="4" size="4">
-
-            
-
-            <label for="gsearch">Search</label>
-            <input type="search" name="gsearch" id="gsearch">
-
-            <label for="inquiry">What is on your inquiry about?</label>
-            <select name="inquiry" id="inquiry">
-                <option value="choose" disabled selected>Choose one of the options below</option>  
-                <option value="service">I am in need of your services</option>
-                <option value="pricing">I have questions about pricing</option>
-                <option value="collaboration">I would like to collaborate on a project</option>
-                <option value="feedback">I would like to give some feedback</option>
-            </select>
-
-            <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here"></textarea>
+            <fieldset>
+                <legend>And another section</legend>
+                
+                <label for="gsearch">Search</label>
+                <input type="search" name="gsearch" id="gsearch">
+    
+                <label for="inquiry">What is on your inquiry about?</label>
+                <select name="inquiry" id="inquiry">
+                    <option value="choose" disabled selected>Choose one of the options below</option>  
+                    <option value="service">I am in need of your services</option>
+                    <option value="pricing">I have questions about pricing</option>
+                    <option value="collaboration">I would like to collaborate on a project</option>
+                    <option value="feedback">I would like to give some feedback</option>
+                </select>
+    
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here"></textarea>
+            </fieldset>
 
             <button type="submit">Submit button</button>
         </form>
